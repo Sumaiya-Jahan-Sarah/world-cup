@@ -91,11 +91,15 @@ article {
     column-gap: 20px;
     row-gap: 40px;
 
+
 }
+
+
 
 .transfer {
     border: 1px solid lightgray;
     border-radius: 7px;
+
 }
 
 .transfer-img img {
@@ -126,4 +130,29 @@ article {
 span {
     color: gray;
     margin-left: 10px;
+}
+
+/* ===================== Footer ==================== */
+footer {
+    background-color: #161616;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+footer h1 {
+    color: aliceblue;
+
+}
+
+hr {
+    color: darkgray;
+    width: 80%;
+}
+
+.media {
+    color: aliceblue;
+    margin: 5px 15px;
+    padding: 5px 7px;
+    border-radius: 50%;
+    background-color: #575454;
 }
