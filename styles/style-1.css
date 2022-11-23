@@ -50,21 +50,36 @@ h1 {
 .match {
     display: flex;
     align-items: stretch;
+    margin: 25px 100px;
 }
 
-
+/*------------------------ Side box -------------------------- */
 
 .side {
     background-color: #101010;
-    width: 200px;
-    height: 300px;
+    border-radius: 20px;
+    width: 250px;
+    height: 280px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-
+    margin-right: 20px;
 }
 
 .side-bar {
-    padding: 15px 20px;
+    margin: 10px 25px;
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+    ;
+    border-radius: 20px;
+    height: 60px;
+    width: 200px;
+    font-size: 20px;
+    justify-content: center;
+    color: #101010;
+
+}
+
+.blog {
     background-color: #FF0000;
     color: #FFFFFF;
 }
@@ -75,6 +90,12 @@ article {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
     row-gap: 40px;
+
+}
+
+.transfer {
+    border: 1px solid lightgray;
+    border-radius: 7px;
 }
 
 .transfer-img img {
