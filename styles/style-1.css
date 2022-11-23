@@ -1,0 +1,108 @@
+/*==================== common style ================== */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+
+}
+
+h1 {
+    font-size: 4em;
+}
+
+/*=======================Banner==================== */
+.banner {
+    display: flex;
+    margin: 50px 100px;
+    border-radius: 30px;
+    background-color: #101010;
+    align-items: center;
+
+}
+
+.greatest-show {
+    width: 50%;
+    color: #FFFFFF;
+    text-align: left;
+
+}
+
+.greatest-show img {
+    width: 100%;
+}
+
+.greatest-show p {
+    margin: 15px 40px;
+}
+
+.greatest-show h1 {
+    margin: 15px 40px;
+}
+
+.greatest-show a {
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #FF0000;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+/*======================= Live Match  ======================*/
+.match {
+    display: flex;
+    align-items: stretch;
+}
+
+
+
+.side {
+    background-color: #101010;
+    width: 200px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+}
+
+.side-bar {
+    padding: 15px 20px;
+    background-color: #FF0000;
+    color: #FFFFFF;
+}
+
+/* -----------------Transfer ---------------- */
+article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 40px;
+}
+
+.transfer-img img {
+    margin-bottom: 25px;
+}
+
+.transfer-link a {
+    text-decoration: none;
+    color: #000000;
+    margin-top: 40px;
+    padding: 5px 25px;
+    box-shadow: 5px 5px lightgray;
+    border: 1px solid;
+    border-radius: 7px;
+}
+
+.transfer-icon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.transfer-icon>.time,
+.chat {
+    display: flex;
+    align-items: center;
+}
+
+span {
+    color: gray;
+    margin-left: 10px;
+}
