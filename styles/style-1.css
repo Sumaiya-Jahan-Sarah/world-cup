@@ -61,8 +61,8 @@ h1 {
 .side {
     background-color: #101010;
     border-radius: 20px;
-    width: 250px;
-    height: 280px;
+    width: 200px;
+    height: 250px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     margin-right: 20px;
@@ -70,13 +70,13 @@ h1 {
 
 .side-bar {
     margin: 10px 25px;
-    padding: 10px 20px;
+    padding: 10px;
     background-color: #FFFFFF;
 
     border-radius: 20px;
-    height: 60px;
-    width: 200px;
-    font-size: 20px;
+    height: 50px;
+    width: 150px;
+    font-size: 15px;
     justify-content: center;
     color: #101010;
 
@@ -91,7 +91,7 @@ h1 {
 article {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 20px;
+    column-gap: 10px;
     row-gap: 40px;
 
 
@@ -120,6 +120,10 @@ article {
     box-shadow: 5px 5px lightgray;
     border: 1px solid;
     border-radius: 7px;
+}
+
+.transfer-info {
+    margin: 5px 10px;
 }
 
 .transfer-icon {
