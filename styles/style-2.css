@@ -87,57 +87,6 @@ h1 {
     color: #FFFFFF;
 }
 
-/* -----------------Transfer ---------------- */
-article {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 20px;
-    row-gap: 40px;
-
-
-}
-
-
-
-
-.transfer {
-    border: 1px solid lightgray;
-    border-radius: 7px;
-
-}
-
-
-
-.transfer-img img {
-    margin-bottom: 25px;
-}
-
-.transfer-link a {
-    text-decoration: none;
-    color: #000000;
-    margin-top: 40px;
-    padding: 5px 25px;
-    box-shadow: 5px 5px lightgray;
-    border: 1px solid;
-    border-radius: 7px;
-}
-
-.transfer-icon {
-    display: flex;
-    justify-content: space-between;
-}
-
-.transfer-icon>.time,
-.chat {
-    display: flex;
-    align-items: center;
-}
-
-span {
-    color: gray;
-    margin-left: 10px;
-}
-
 /* ===================== Footer ==================== */
 footer {
     background-color: #161616;
@@ -153,6 +102,11 @@ footer h1 {
 hr {
     color: darkgray;
     width: 80%;
+}
+
+footer span {
+    color: gray;
+    margin-left: 10px;
 }
 
 .media {
