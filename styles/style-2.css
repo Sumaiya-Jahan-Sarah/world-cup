@@ -87,6 +87,35 @@ h1 {
     color: #FFFFFF;
 }
 
+/*------------ article ---------- */
+article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 40px;
+    column-gap: 20px;
+}
+
+.country {
+    text-align: center;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+.country-flag {
+    display: flex;
+    align-items: center;
+
+}
+
+.flag {
+
+    margin: 10px;
+}
+
+.country p {
+    color: rgb(110, 106, 106);
+}
+
 /* ===================== Footer ==================== */
 footer {
     background-color: #161616;
