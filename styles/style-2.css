@@ -145,3 +145,23 @@ footer span {
     border-radius: 50%;
     background-color: #575454;
 }
+
+/* =======================Media Qeuries=================== */
+
+/*--------------- small device -------------- */
+@media only screen and (max-width:576px) {
+
+    /* --------------- banner ----------------- */
+    .banner {
+        flex-direction: column;
+
+    }
+
+    .greatest-show p {
+        white-space: nowrap;
+        width: 300px;
+        height: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

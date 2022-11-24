@@ -2,6 +2,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: auto;
+    overflow-x: hidden;
 
 }
 
@@ -165,4 +166,52 @@ hr {
     padding: 5px 7px;
     border-radius: 50%;
     background-color: #575454;
+}
+
+/* =======================Media Qeuries=================== */
+
+/*--------------- small device -------------- */
+@media only screen and (max-width:576px) {
+    body {
+
+        overflow-x: hidden;
+    }
+
+    .banner {
+        flex-direction: column;
+        margin: 5px;
+    }
+
+
+
+    /************************** Match *************************/
+    .match {
+        margin: 5px;
+        flex-direction: column;
+    }
+
+    /* -------------- Aside ------------- */
+    .side {
+        background-color: transparent;
+    }
+
+    /* -------------------- article --------------- */
+    article {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+
+    .transfer-img img {
+        width: 100%;
+    }
+
+    /****************** footer  ********************/
+    footer {
+        width: 100%;
+    }
+
+    footer span {
+        display: block;
+    }
 }
