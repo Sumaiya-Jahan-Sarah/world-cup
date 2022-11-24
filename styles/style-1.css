@@ -2,7 +2,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: auto;
-    overflow-x: hidden;
+
 
 }
 
@@ -143,6 +143,10 @@ span {
     margin-left: 10px;
 }
 
+.view {
+    visibility: hidden;
+}
+
 /* ===================== Footer ==================== */
 footer {
     background-color: #161616;
@@ -168,14 +172,23 @@ hr {
     background-color: #575454;
 }
 
-/* =======================Media Qeuries=================== */
+/* ======================= **************************************
+                         Media Qeuries
+************************************=================== */
 
-/*--------------- small device -------------- */
+/*---------------*********** small device ***********-------------- */
 @media only screen and (max-width:576px) {
     body {
-
+        position: absolute;
         overflow-x: hidden;
+        margin: 0%;
     }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    /*------------------ Banner ----------------------------- */
 
     .banner {
         flex-direction: column;
@@ -207,11 +220,55 @@ hr {
     }
 
     /****************** footer  ********************/
-    footer {
-        width: 100%;
-    }
+
 
     footer span {
         display: block;
+    }
+}
+
+/*************** -----------medium device------------ *****************/
+
+@media only screen and (max-width:992px) and (min-width:577px) {
+
+    /**************** match  *******************/
+    .match {
+        flex-wrap: wrap;
+        margin: 25px 50px;
+
+    }
+
+    /* ---------------------- Aside ---------------------- */
+    .side {
+        background-color: transparent;
+        grid-template-columns: repeat(3, 1fr);
+        height: 100px;
+    }
+
+    /* ----------------------- Article ---------------------- */
+    article {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* --------------- Hidden--------------- */
+    .tab {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    /********************** View All  ******************************/
+    .view {
+        visibility: visible;
+        display: flex;
+        justify-content: center;
+    }
+
+    .view a {
+        text-decoration: none;
+        color: #FFFFFF;
+        background-color: #FF0000;
+        border-radius: 5px;
+        padding: 10px 20px;
+
     }
 }
