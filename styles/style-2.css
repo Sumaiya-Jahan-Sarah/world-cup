@@ -58,6 +58,7 @@ h1 {
 
 /*------------------------ Side box -------------------------- */
 
+
 .side {
     background-color: #101010;
     border-radius: 20px;
@@ -146,22 +147,109 @@ footer span {
     background-color: #575454;
 }
 
-/* =======================Media Qeuries=================== */
+/* ======================= **************************************
+                         Media Qeuries
+************************************=================== */
 
-/*--------------- small device -------------- */
+/*---------------*********** small device ***********-------------- */
 @media only screen and (max-width:576px) {
+    body {
+        position: absolute;
+        overflow-x: hidden;
+        margin: 0%;
+    }
 
-    /* --------------- banner ----------------- */
+    h1 {
+        font-size: 3em;
+    }
+
+    /*------------------ Banner ----------------------------- */
+
     .banner {
         flex-direction: column;
+        margin: 5px;
+    }
+
+    .greatest-show a {
+        font-size: 12px;
+    }
+
+
+
+    /************************** Match *************************/
+    .match {
+        margin: 5px;
+        flex-direction: column;
+    }
+
+    /* -------------- Aside ------------- */
+    .side {
+        background-color: transparent;
+    }
+
+    /* -------------------- article --------------- */
+    article {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .country-flag img {
+        width: 100%;
+    }
+
+
+
+
+
+    /****************** footer  ********************/
+
+
+    footer span {
+        display: block;
+    }
+}
+
+/*************** -----------medium device------------ *****************/
+
+@media only screen and (max-width:992px) and (min-width:577px) {
+
+    /**************** match  *******************/
+    .match {
+        flex-wrap: wrap;
+        margin: 25px 50px;
 
     }
 
-    .greatest-show p {
-        white-space: nowrap;
-        width: 300px;
-        height: 200px;
-        overflow: hidden;
-        text-overflow: ellipsis;
+    /* ---------------------- Aside ---------------------- */
+    .side {
+        background-color: transparent;
+        grid-template-columns: repeat(3, 1fr);
+        height: 100px;
+    }
+
+    /* ----------------------- Article ---------------------- */
+    article {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* --------------- Hidden--------------- */
+    .tab {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    /********************** View All  ******************************/
+    .view {
+        visibility: visible;
+        display: flex;
+        justify-content: center;
+    }
+
+    .view a {
+        text-decoration: none;
+        color: #FFFFFF;
+        background-color: #FF0000;
+        border-radius: 5px;
+        padding: 10px 20px;
+
     }
 }
