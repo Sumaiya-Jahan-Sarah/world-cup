@@ -1,0 +1,20 @@
+.country {
+    text-align: center;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+.country-flag {
+    display: flex;
+    align-items: center;
+
+}
+
+.flag {
+
+    margin: 10px;
+}
+
+.country p {
+    color: rgb(110, 106, 106);
+}

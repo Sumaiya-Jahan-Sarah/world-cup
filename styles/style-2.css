@@ -3,6 +3,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: auto;
 
+
 }
 
 
@@ -46,7 +47,11 @@ h1 {
     background-color: #FF0000;
     border-radius: 5px;
     padding: 10px 20px;
+
 }
+
+
+
 
 /*======================= Live Match  ======================*/
 .match {
@@ -57,7 +62,6 @@ h1 {
 }
 
 /*------------------------ Side box -------------------------- */
-
 
 .side {
     background-color: #101010;
@@ -88,12 +92,14 @@ h1 {
     color: #FFFFFF;
 }
 
-/*------------ article ---------- */
+/* -----------------article ---------------- */
 article {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
     row-gap: 40px;
-    column-gap: 20px;
+
+
 }
 
 .country {
@@ -117,6 +123,10 @@ article {
     color: rgb(110, 106, 106);
 }
 
+.view {
+    visibility: hidden;
+}
+
 /* ===================== Footer ==================== */
 footer {
     background-color: #161616;
@@ -132,11 +142,6 @@ footer h1 {
 hr {
     color: darkgray;
     width: 80%;
-}
-
-footer span {
-    color: gray;
-    margin-left: 10px;
 }
 
 .media {
@@ -192,10 +197,6 @@ footer span {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .country-flag img {
-        width: 100%;
-    }
-
 
 
 
@@ -214,7 +215,7 @@ footer span {
 
     /**************** match  *******************/
     .match {
-        flex-wrap: wrap;
+        flex-direction: column;
         margin: 25px 50px;
 
     }
