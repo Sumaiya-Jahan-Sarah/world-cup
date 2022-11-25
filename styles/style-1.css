@@ -2,7 +2,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: auto;
-
+    overflow-x: hidden;
 
 }
 
@@ -115,6 +115,7 @@ article {
 
 .transfer-img img {
     margin-bottom: 25px;
+    width: 100%;
 }
 
 .transfer-link a {
@@ -200,7 +201,7 @@ hr {
     }
 
     .greatest-show a {
-        font-size: 12px;
+        font-size: 10px;
     }
 
 

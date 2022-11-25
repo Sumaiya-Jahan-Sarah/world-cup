@@ -87,7 +87,7 @@ h1 {
 
 }
 
-.blog {
+.upcoming {
     background-color: #FF0000;
     color: #FFFFFF;
 }
@@ -96,7 +96,7 @@ h1 {
 article {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 10px;
+    column-gap: 20px;
     row-gap: 40px;
 
 
@@ -111,7 +111,7 @@ article {
 .country-flag {
     display: flex;
     align-items: center;
-
+    justify-content: center;
 }
 
 .flag {
@@ -137,6 +137,10 @@ footer {
 footer h1 {
     color: aliceblue;
 
+}
+
+footer span {
+    color: lightgray;
 }
 
 hr {
@@ -176,7 +180,7 @@ hr {
     }
 
     .greatest-show a {
-        font-size: 12px;
+        font-size: 10px;
     }
 
 
@@ -190,6 +194,10 @@ hr {
     /* -------------- Aside ------------- */
     .side {
         background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     /* -------------------- article --------------- */
@@ -230,6 +238,11 @@ hr {
     /* ----------------------- Article ---------------------- */
     article {
         grid-template-columns: repeat(2, 1fr);
+        overflow-x: hidden;
+    }
+
+    .flag img {
+        width: 100%;
     }
 
     /* --------------- Hidden--------------- */
