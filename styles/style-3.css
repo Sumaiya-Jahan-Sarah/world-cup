@@ -1,3 +1,32 @@
+.greatest-show a:hover {
+    background-color: gold;
+    padding: 50px;
+    border-radius: 50%;
+    color: #101010;
+}
+
+.top {
+    margin: 50px 100px;
+    border-radius: 30px;
+    background-color: #101010;
+    align-items: center;
+}
+
+.animation {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 100px;
+}
+
+.animation img {
+    width: 110px;
+    height: 110px;
+}
+
+/************************* Animation******************************/
 .container {
     display: flex;
     justify-content: center;
