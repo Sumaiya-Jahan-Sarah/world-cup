@@ -47,7 +47,7 @@ h1 {
     background-color: #FF0000;
     border-radius: 5px;
     padding: 10px 20px;
-    transition: background-color 2s ease-in;
+
     transition: padding 2s ease-in;
 
 }
@@ -150,6 +150,7 @@ span {
     margin-left: 10px;
 }
 
+/********************** View All  ******************************/
 .view {
     visibility: hidden;
 }
@@ -283,3 +284,5 @@ hr {
 
     }
 }
+
+/*========================= Finish ==============================*/
