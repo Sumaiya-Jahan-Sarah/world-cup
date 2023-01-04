@@ -1,12 +1,15 @@
 /*==================== common style ================== */
 body {
     font-family: 'Roboto', sans-serif;
-    margin: auto;
-    overflow-x: hidden;
+    /* margin: auto;
+    max-width: 100vw; */
+    /* overflow-x: hidden; */
 
 }
 
-
+.test-bg {
+    background-color: darkgreen !important;
+}
 
 h1 {
     font-size: 4em;
@@ -57,10 +60,10 @@ h1 {
 
 /*======================= Live Match  ======================*/
 .match {
-    display: flex;
-    justify-content: stretch;
+    display: grid;
+    grid-template-columns: 200px 3fr;
     margin: 25px 100px;
-
+    column-gap: 20px;
 }
 
 /*------------------------ Side box -------------------------- */
@@ -68,11 +71,10 @@ h1 {
 .side {
     background-color: #101010;
     border-radius: 20px;
-    width: 200px;
-    height: 250px;
+
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    margin-right: 20px;
+    margin: auto;
 }
 
 .side-bar {
@@ -98,7 +100,7 @@ h1 {
 article {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 10px;
+    column-gap: 20px;
     row-gap: 40px;
 
 
@@ -110,14 +112,16 @@ article {
 .transfer {
     border: 1px solid lightgray;
     border-radius: 7px;
+    box-sizing: border-box;
 
 }
 
 
 
-.transfer-img img {
+.transfer-img>img {
     margin-bottom: 25px;
     width: 100%;
+    height: auto;
 }
 
 .transfer-link a {
@@ -170,6 +174,8 @@ footer h1 {
 hr {
     color: darkgray;
     width: 80%;
+    border-width: 0px;
+    height: 1px;
 }
 
 .media {
@@ -186,6 +192,8 @@ hr {
 
 /*---------------*********** small device ***********-------------- */
 @media only screen and (max-width:576px) {
+    /************** animation ************ */
+
     body {
         position: absolute;
         overflow-x: hidden;
@@ -194,6 +202,7 @@ hr {
 
     h1 {
         font-size: 3em;
+
     }
 
     /*------------------ Banner ----------------------------- */
@@ -201,12 +210,19 @@ hr {
     .banner {
         flex-direction: column;
         margin: 5px;
+        position: relative;
+        top: 115px;
     }
 
     .greatest-show a {
         font-size: 10px;
     }
 
+    .greatest-show p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 
 
     /************************** Match *************************/
@@ -239,27 +255,36 @@ hr {
     }
 }
 
-/*************** -----------medium device------------ *****************/
+/***************==============medium device=========== *****************/
 
 @media only screen and (max-width:992px) and (min-width:577px) {
 
     /**************** match  *******************/
     .match {
-        flex-wrap: wrap;
-        margin: 25px 50px;
+        grid-template-columns: repeat(1, 1fr);
+
 
     }
 
     /* ---------------------- Aside ---------------------- */
     .side {
         background-color: transparent;
-        grid-template-columns: repeat(3, 1fr);
-        height: 100px;
+
+        display: flex;
+        height: auto;
+        align-items: center;
+        justify-content: center;
     }
 
     /* ----------------------- Article ---------------------- */
     article {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .transfer {
+        box-sizing: border-box;
+        width: 100%;
+
     }
 
     /* --------------- Hidden--------------- */

@@ -12,6 +12,8 @@
      border-radius: 30px;
      background-color: #101010;
      align-items: center;
+     display: flex;
+     flex-direction: column;
  }
 
  .animation {
@@ -20,7 +22,7 @@
      justify-content: center;
      align-items: center;
      position: relative;
-     top: 100px;
+     top: 69px;
  }
 
  .animation img {
@@ -34,7 +36,7 @@
      justify-content: center;
      align-items: center;
      position: relative;
-     top: 200px;
+     top: 125px;
  }
 
  .ring {
